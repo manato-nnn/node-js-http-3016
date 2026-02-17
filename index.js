@@ -77,6 +77,6 @@ const server = http
     console.error(`[${new Date()}] Client Error`, e);
   });
 const port = process.env.PORT || 8000;
-server.listen(port, () => {
+server.listen(port, "0.0.0.0", () => {
   console.info(`[${new Date()}] Listening on ${port}`);
 });
